@@ -100,7 +100,6 @@ pipeline {
                     node_modules/.bin/netlify --version
                     echo "Deploying to staging. Site ID: $NETLIFY_SITE_ID"
                     node_modules/.bin/netlify status
-                    npx playwright test  --reporter=html
                 '''
             }
 
